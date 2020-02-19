@@ -10,7 +10,7 @@ import { ThemeProvider } from 'styled-components';
 
 
 export default{
-    title: 'Buttons',
+    title: 'Links',
     component: StyledButttonNew,
     decorator:[withA11y],
 }
@@ -23,9 +23,3 @@ export const button_normal =()=> (
     <StyledButttonNew />
     </ThemeProvider>
 )
-
-
-
-export const button_pill =()=> (
-    <Buttonpill />
- )

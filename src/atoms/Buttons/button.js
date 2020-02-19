@@ -1,15 +1,9 @@
 import React from 'react'
-import {Butttonnormal, Butttonpill} from './styles'
+import {StyledButton} from './styles'
 
 
-export default function Button() {
+export  function StyledButttonNew() {
     return (
-        <Butttonnormal className = "btn btn-light" children ="Click Me" />
-        )
-}
-
-export  function Buttonpill() {
-    return (
-        <Butttonpill className = "badge btn badge-pill" children ="Click Pill" />
+        <StyledButton className ="btn" variant="secondary" children="Download CV"/>
         )
 }
