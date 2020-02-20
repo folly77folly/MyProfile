@@ -1,15 +1,9 @@
 import React from 'react'
-import {Butttonnormal, Butttonpill} from './styles'
+import {StyledLink} from './mixins'
 
 
-export default function Button() {
+export function StyledLinkNew() {
     return (
-        <Butttonnormal className = "btn btn-light" children ="Click Me" />
-        )
-}
-
-export  function Buttonpill() {
-    return (
-        <Butttonpill className = "badge btn badge-pill" children ="Click Pill" />
+        <StyledLink fontsize="medium" color = "secondary">Home</StyledLink>
         )
 }

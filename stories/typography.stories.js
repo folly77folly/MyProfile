@@ -1,14 +1,32 @@
 import React from 'react'
+// import Button, {Buttonpill, bttn} from '../src/atoms/Buttons/button'
+import {StyledTypographyNew, StyledTypographyLarge, StyledTypographySmall} from '../src/atoms/typography/typography'
+import 'bootstrap/dist/css/bootstrap.css';
+import { withA11y } from '@storybook/addon-a11y'
+import { theme } from 'styled-theming';
+import { ThemeProvider } from 'styled-components';
 
-export default {
-    title : 'Headers',
+
+
+export default{
+    title: 'Typography',
+    component: StyledTypographyNew,
+    decorator:[withA11y],
+}
+
+const themes = {
+    mode : "light",
+    size : "60px",
 };
+export const Typography =()=> (
+    <ThemeProvider theme={themes}>
+        <section className = "bg-dark">
+        <StyledTypographyNew />
+        <StyledTypographyLarge />
+        <StyledTypographySmall size/>
 
-export const text = () => <div>
-    <h1 className=''>This is Header 1</h1>
-    <h2>This is Header 2</h2>
-    <h3>This is Header 3</h3>
-    <h4>This is Header 4</h4>
-    <h5>This is Header 5</h5>
-    <h6>This is Header 6</h6>
-    </div>;
+        </section>
+
+    </ThemeProvider>
+)
+
