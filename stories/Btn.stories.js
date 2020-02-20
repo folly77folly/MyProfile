@@ -8,7 +8,6 @@ import { ThemeProvider } from 'styled-components';
 
 
 
-
 export default{
     title: 'Buttons',
     component: StyledButttonNew,

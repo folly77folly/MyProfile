@@ -1,6 +1,5 @@
 import React from 'react'
-// import Button, {Buttonpill, bttn} from '../src/atoms/Buttons/button'
-import {StyledButttonNew} from '../src/atoms/Buttons/button'
+import {StyledLinkNew} from '../src/atoms/Links/link'
 import 'bootstrap/dist/css/bootstrap.css';
 import { withA11y } from '@storybook/addon-a11y'
 import { theme } from 'styled-theming';
@@ -11,15 +10,22 @@ import { ThemeProvider } from 'styled-components';
 
 export default{
     title: 'Links',
-    component: StyledButttonNew,
+    component: StyledLinkNew,
     decorator:[withA11y],
 }
 
 const themes = {
     mode : "light"
 };
-export const button_normal =()=> (
+
+export const Link =()=> (
+    
     <ThemeProvider theme={themes}>
-    <StyledButttonNew />
+    <section className = "bg-dark">
+    <StyledLinkNew />
+    </section>
     </ThemeProvider>
+   
 )
+    
+
