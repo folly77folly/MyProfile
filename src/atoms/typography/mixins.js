@@ -1,6 +1,5 @@
 import theme from "styled-theming";
 import {color} from '../color/mixins'
-
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
@@ -20,7 +19,6 @@ export const fontsize = theme.variants("mode", "fontsize", {
     secondary: { light: "font-size :3rem", dark: "font-size :3rem" },
     primarylight: { light: "font-weight :regular", dark: "font-weight :regular" },
     secondarylight: { light: "font-weight :normal", dark: "font-weight :normal" },
-    
   });
 
   export const fontfamily = theme.variants("mode", "fontfamily", {
@@ -29,6 +27,27 @@ export const fontsize = theme.variants("mode", "fontsize", {
     
   });
 
+  export const width = theme.variants("mode", "width", {
+    small: { light: "width :1rem", dark: "width :1rem" },
+    medium: { light: "width :2rem", dark: "width :2rem" },
+    large: { light: "width :6rem", dark: "width :6rem" },
+    xlarge: { light: "width :8rem", dark: "width :8rem" },
+    
+  });
+
+  export const height = theme.variants("mode", "height", {
+    small: { light: "height :1rem", dark: "height :1rem" },
+    medium: { light: "height :2rem", dark: "height :2rem" },
+    large: { light: "height :6rem", dark: "height :6rem" },
+    xlarge: { light: "height :8rem", dark: "height :8rem" },
+    
+  });
+
+ export const borderradius = theme.variants("mode", "variant", {
+    primary: { light: "0.2rem", dark: "0.2rem" },
+    secondary: { light: "0.5rem", dark: "0.5rem" },
+    circle: { light: "50%", dark: "50%" },
+  });
 
   export const StyledTypography = styled.h1`
   ${color};
