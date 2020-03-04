@@ -7,13 +7,12 @@ export const color = theme.variants("mode", "color", {
     primarylight: { light: 'color:#6f87ff', dark: 'color:#6f87ff'},
     primarydarklight: { light: 'color:#685c90', dark: 'color:#685c90'},
     
-
   });
 
 
 
   export const backgroundColor = theme.variants("mode", "backgroundColor", {
-    primary: { light: "background-color:#fff", dark: "background-color:#271661" },
-    secondary: { light: "background-color:#271661", dark: "background-color:#271661" },
+    primary: { light: "background-color:#fff", dark: "background-color:#fff" },
+    secondary: { light: "background-color:#271661", dark: "background-color:#fff" },
     yellow: { light: 'background:#ffd130', dark: 'background:#ffd130'},
   });

@@ -4,6 +4,24 @@ import {StyledButton} from './styles'
 
 export  function StyledButttonNew() {
     return (
-        <StyledButton className ="btn" color="primarylight" fontweight= "secondarylight" >Download CV</StyledButton>
+        <StyledButton className ="btn" 
+        color="primary" 
+        fontweight= "secondary"
+        >Download CV</StyledButton>
+        )
+}
+
+export  function StyledButttonNew2() {
+    return (
+        <StyledButton 
+        className ="btn badge-pill" 
+        color="secondary" 
+        fontweight= "primary" 
+        backgroundColor="secondary"
+        hover ="secondary"
+        hoverfontcolor="secondary"
+        bordercolor="secondary"
+        >
+        illustration</StyledButton>
         )
 }
