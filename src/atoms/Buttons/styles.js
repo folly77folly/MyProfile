@@ -9,7 +9,7 @@ import {fontsize, fontweight} from "../typography/mixins"
 
 
   const hover = theme.variants("mode", "hover", {
-    secondary: { light: "#6f87ff", dark: "#6f87ff" },
+    secondary: { light: "#6f87ff", dark: "#ffff" },
   });
 
   const hoverfontcolor = theme.variants("mode", "hoverfontcolor", {
@@ -17,7 +17,7 @@ import {fontsize, fontweight} from "../typography/mixins"
   });
 
   const bordercolor = theme.variants("mode", "bordercolor", {
-    secondary: { light: "#6f87ff", dark: "#6f87ff" },
+    secondary: { light: "#6f87ff", dark: "#ffff" },
   });
 
 export const StyledButton = styled.button`

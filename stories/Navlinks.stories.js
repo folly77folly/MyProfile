@@ -1,8 +1,8 @@
-import Navlink from '../src/molecules/linklogo'
+import Navlink from '../src/molecules/links'
 import React from 'react'
 
 export default {
-    title: "Navlink",
+    title: "Navlink_molecule",
     component: Navlink,
   };
 
