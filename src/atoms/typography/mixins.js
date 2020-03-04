@@ -9,9 +9,9 @@ export const fontsize = theme.variants("mode", "fontsize", {
     medium: { light: "font-size :0.7rem", dark: "font-size :0.7rem" },
     xxsmall: { light: "font-size :0.3rem", dark: "font-size :0.7rem" },
     xsmall: { light: "font-size :0.5rem", dark: "font-size :0.7rem" },
-    large: { light: "font-size :1rem", dark: "font-size :1rem" },
+    large: { light: "font-size :1.2rem", dark: "font-size :1.2rem" },
     xlarge: { light: "font-size :2rem", dark: "font-size :2rem" },
-    xxlarge: { light: "font-size :2rem", dark: "font-size :2rem" },
+    xxlarge: { light: "font-size :3.5rem", dark: "font-size :3.5rem" },
   });
 
 
@@ -51,13 +51,11 @@ export const fontsize = theme.variants("mode", "fontsize", {
     circle: { light: "50%", dark: "50%" },
   });
 
-  export const StyledTypography = styled.h1`
+  export const StyledTypography = styled.p`
   ${color};
   ${fontsize};
   ${fontweight};
   ${fontfamily};
-  padding-right: 0.6em;
-  padding-left: 0.6em;
   `
   
   StyledTypography.PropTypes ={

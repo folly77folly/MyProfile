@@ -2,12 +2,13 @@ import React from 'react'
 import {StyledButton} from './styles'
 
 
-export  function StyledButttonNew() {
+export  function StyledButttonNew(props) {
     return (
         <StyledButton className ="btn" 
         color="primary" 
         fontweight= "secondary"
-        >Download CV</StyledButton>
+        backgroundColor="primary"
+    >{props.text}</StyledButton>
         )
 }
 
