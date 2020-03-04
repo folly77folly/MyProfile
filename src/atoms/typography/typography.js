@@ -4,18 +4,20 @@ import {StyledTypography} from './mixins'
 
 export  function StyledTypographyNew() {
     return (
-        <StyledTypography fontsize ="large" color="primarylight" fontfamily="primary">Hello</StyledTypography>
+        <StyledTypography fontsize ="xlarge" color="primarylight" fontfamily="primary">Hello</StyledTypography>
         )
 }
 
 export  function StyledTypographyLarge() {
     return (
-        <StyledTypography fontsize ="xxlarge" color="secondary" fontfamily="primary">I'M JACK BAKY</StyledTypography>
+        <StyledTypography fontsize ="xxlarge" color="secondary" fontfamily="primary">I'M Gbolahan Eniodunmo</StyledTypography>
         )
 }
 
 export  function StyledTypographySmall() {
     return (
-        <StyledTypography fontsize ="medium" color ="secondary" fontfamily="primary"> lorem eposum </StyledTypography>
+        <StyledTypography fontsize ="large" color ="secondary" fontfamily="primary" fontweight="primary">
+            Expert in Webdesign UX/UI Development
+            </StyledTypography>
         )
 }
