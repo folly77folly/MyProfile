@@ -1,16 +1,16 @@
-import Header1 from '../src/molecules/header'
+import Btnlinks from '../src/molecules/links2'
 import React from 'react'
 import { ThemeProvider } from "styled-components";
 
 export default {
-    title: "Header1molecule",
-    component: Header1,
+    title: "Btnmolecule",
+    component: Btnlinks,
   };
 
-  export const Header1molecule = () => (
+  export const Btnmolecule = () => (
  
       <section className="bg-dark">
-        <Header1
+        <Btnlinks
         />       
       </section>
     
