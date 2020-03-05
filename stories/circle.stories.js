@@ -21,6 +21,7 @@ export const circles = () => (
       height ="large"
       width ="large"
       backgroundColor="secondary"
+      children="hidgdgfdgdf"
       ></CircleTube>
     </section>
   </ThemeProvider>
