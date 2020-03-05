@@ -8,7 +8,7 @@ const themes = {
   };
   
 
-function HeaderSkills () {
+function HeaderSkills2 () {
     return (
         <ThemeProvider theme={themes}>
         <div className="d-flex flex-column align-items-center">
@@ -30,4 +30,4 @@ function HeaderSkills () {
 
     );
   }
-export default HeaderSkills
+export default HeaderSkills2
