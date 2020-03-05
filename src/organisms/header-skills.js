@@ -1,7 +1,6 @@
 import React from 'react'
 import HeaderSkills from '../molecules/header-skills'
 import HeaderSkillsRing from '../molecules/header-skills-ring'
-import image6 from '../atoms/images/image6.jpg'
 
 
 function HeaderSkill () {
