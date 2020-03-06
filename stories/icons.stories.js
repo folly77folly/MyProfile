@@ -24,6 +24,22 @@ export const icons = () => (
       width ="small"
       height ="small"
       />
+            <YellowStar
+      width ="small"
+      height ="small"
+      />
+            <YellowStar
+      width ="small"
+      height ="small"
+      />
+            <YellowStar
+      width ="small"
+      height ="small"
+      />
+            <YellowStar
+      width ="small"
+      height ="small"
+      />
       <br></br>
       <Whitefacebook
       width ="small"

@@ -45,6 +45,27 @@ export const fontsize = theme.variants("mode", "fontsize", {
     
   });
 
+  export const padding = theme.variants("mode", "padding", {
+    small: { light: "padding :1rem", dark: "padding :1rem" },
+    medium: { light: "padding :2rem", dark: "padding :2rem" },
+    large: { light: "padding :6rem", dark: "padding :6rem" },
+    xlarge: { light: "padding :8rem", dark: "padding :8rem" },
+    xxlarge: { light: "padding :15rem", dark: "padding :15rem" },
+    xxxlarge: { light: "padding :25rem", dark: "padding :25rem" },
+    nopadd: { light: "padding :0", dark: "padding :0" },
+    
+  });
+
+  export const margin = theme.variants("mode", "margin", {
+    small: { light: "margin :1rem", dark: "margin :1rem" },
+    medium: { light: "margin :2rem", dark: "margin :2rem" },
+    large: { light: "margin :6rem", dark: "margin :6rem" },
+    xlarge: { light: "margin :8rem", dark: "margin :8rem" },
+    xxlarge: { light: "margin :15rem", dark: "margin :15rem" },
+    xxxlarge: { light: "margin :25rem", dark: "margin :25rem" },
+    nomarg: { light: "margin:0", dark: "margin:0" },
+    
+  });  
  export const borderradius = theme.variants("mode", "borderradius", {
     primary: { light: "0.2rem", dark: "0.2rem" },
     secondary: { light: "0.5rem", dark: "0.5rem" },
@@ -56,10 +77,12 @@ export const fontsize = theme.variants("mode", "fontsize", {
   ${fontsize};
   ${fontweight};
   ${fontfamily};
+  ${padding};
+  ${margin};
   `
   
   StyledTypography.PropTypes ={
-    variant:PropTypes.oneOf(["primary","secondary","primarylight"])
+    variant:PropTypes.oneOf(["primary","secondary","primarylight","nomargin","nopadding"])
   }
   
   StyledTypography.defaultProps = {

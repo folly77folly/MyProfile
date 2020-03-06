@@ -8,5 +8,4 @@ export const StyledImage = styled.img.attrs({
 })
 `${height};
 ${width};
-console.log(props.img);
 `
