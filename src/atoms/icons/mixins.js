@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import {Zap} from 'styled-icons/octicons/Zap'
 import {Star} from 'styled-icons/boxicons-solid/Star'
-import {width, height } from '../typography/mixins'
+import {width, height, margin } from '../typography/mixins'
 import { backgroundColor } from '../color/mixins'
 import { Facebook,  } from 'styled-icons/boxicons-logos/Facebook'
 import { Twitter } from 'styled-icons/boxicons-logos/Twitter'
@@ -25,6 +25,7 @@ export  const Whitefacebook = styled(Facebook)`
   ${width};
   ${height};
   ${backgroundColor};
+  ${margin};
 `
 
 export  const Whitetwitter = styled(Twitter)`
@@ -32,23 +33,25 @@ export  const Whitetwitter = styled(Twitter)`
   ${width};
   ${height};
   ${backgroundColor};
-
+  ${margin};
 `
 export  const Whitegoogle = styled(GooglePlus)`
 color: white;
 ${width};
 ${height};
 ${backgroundColor};
-
+${margin};
 `
 export  const Whitelinkedin = styled(Linkedin)`
 color: white;
 ${width};
 ${height};
+${margin};
 `
 
 export  const Whiteyoutube = styled(Youtube)`
 color: white;
 ${width};
 ${height};
+${margin};
 `
