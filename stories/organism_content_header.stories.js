@@ -1,6 +1,5 @@
 import Content_Header from '../src/organisms/content-header'
 import React from 'react'
-import { StyledImage } from '../src/atoms/images/index'
 
 
 export default {

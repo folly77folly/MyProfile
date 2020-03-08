@@ -31,6 +31,7 @@ export const fontsize = theme.variants("mode", "fontsize", {
     medium: { light: "width :2rem", dark: "width :2rem" },
     large: { light: "width :6rem", dark: "width :6rem" },
     xlarge: { light: "width :8rem", dark: "width :8rem" },
+    xylarge: { light: "width :10rem", dark: "width :10rem" },
     xxlarge: { light: "width :15rem", dark: "width :15rem" },
     
   });
@@ -41,6 +42,7 @@ export const fontsize = theme.variants("mode", "fontsize", {
     large: { light: "height :6rem", dark: "height :6rem" },
     xlarge: { light: "height :8rem", dark: "height :8rem" },
     xxlarge: { light: "height :15rem", dark: "height :15rem" },
+    xylarge: { light: "height :10rem", dark: "height :10rem" },
     xxxlarge: { light: "height :25rem", dark: "height :25rem" },
     
   });

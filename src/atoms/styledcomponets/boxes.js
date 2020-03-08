@@ -1,20 +1,20 @@
-import React from 'react'
 import styled from 'styled-components'
+import {fontsize, height, width} from '../typography/mixins'
+import {color, backgroundColor } from '../color/mixins'
 
-const Box = styled.div`
-height :5em;
-width : 7em;
-background : ${props => props.colored ? "#6f87ff" : "white"}
+const Line = styled.div`
+overflow-wrap: break-word;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+padding : 4rem;
+font-weight:bolder;
+${color};
+${height};
+${width};
+${backgroundColor};
+${fontsize};
 `
 
-// class Ring extends React.Component{
-//     render(){
-//         return(
-//             <div className="progress">
-//             <div className="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">ddjghggjkjhgjhghgjgjkgjhgkjkkjgjkhkg</div>
-//             </div>
-//         )
-//     }
-// }
-
-export default Box
+export default Line

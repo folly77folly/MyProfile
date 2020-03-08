@@ -15,4 +15,5 @@ export const color = theme.variants("mode", "color", {
     primary: { light: "background-color:#fff", dark: "background-color:#fff" },
     secondary: { light: "background-color:#271661", dark: "background-color:#fff" },
     yellow: { light: 'background:#ffd130', dark: 'background:#ffd130'},
+    primarylight: { light: 'background:#6f87ff', dark: 'background:#6f87ff'},
   });

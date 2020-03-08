@@ -15,7 +15,7 @@ function Navlink () {
         <ul className="d-flex link">
             <li><InboundLink  href="/">Home</InboundLink></li>
             <li><InboundLink  href="/about">About</InboundLink></li>
-            <li><InboundLink  href="/">Service</InboundLink></li>
+            <li><InboundLink  href="/service">Service</InboundLink></li>
             <li><InboundLink  href="/">Portfolio</InboundLink></li>
             <li><InboundLink  href="/">Contact</InboundLink></li>
         </ul>            
