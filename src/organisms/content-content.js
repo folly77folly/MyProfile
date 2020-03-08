@@ -6,7 +6,7 @@ import image6 from "../atoms/images/image6.jpg";
 function Content_Header() {
   return (
     <div className="d-flex justify-content-center">
-      <div className="col-md-5">
+      <div className="col-md-5 ">
         <ContentHeader></ContentHeader>
       </div>
       <div className="col-md-5">

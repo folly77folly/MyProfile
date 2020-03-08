@@ -8,15 +8,15 @@ const themes = {
   mode: "light"
 };
 
-function HeaderSkills() {
+function HeaderSkills3() {
   return (
     <ThemeProvider theme={themes}>
-      <div className=" col-12 d-flex flex-column justify-content-end align-items-center">
+      <div className=" col-8 d-flex flex-column justify-content-end align-items-center">
         <StyledTypography
           fontsize="xlarge"
           color="secondary"
           fontfamily="primary"
-          children="My Skills"
+          children="Latest Work"
         />
         <Line
         style={{height:"2px",width:"100px", backgroundColor:"white"}}
@@ -37,4 +37,4 @@ function HeaderSkills() {
     </ThemeProvider>
   );
 }
-export default HeaderSkills;
+export default HeaderSkills3;

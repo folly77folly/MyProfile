@@ -3,6 +3,7 @@ import './linklogo.css'
 import { ThemeProvider } from "styled-components"
 import { StyledButttonNew } from '../atoms/Buttons/button'
 import {StyledTypography} from '../atoms/typography/mixins'
+import Line from '../atoms/styledcomponets/boxes'
 
 const themes = {
     mode: "light"
@@ -19,8 +20,15 @@ function HeaderContent () {
          fontfamily="primary"
          children ="About Me"
           />
+        <Line
+        style={{height:"2px",width:"100px", backgroundColor:"white"}}
+        backgroundColor="primary"
+        padding="nopadd"
+        margin="nomarg"
+        />
+        <br></br>            
          <StyledTypography
-         fontsize ="large" 
+         fontsize ="small" 
          color ="secondary" 
          fontfamily="primary" 
          fontweight="primary"

@@ -19,7 +19,7 @@ function Footerfoot() {
           fontfamily="primary"
           children="You have any project"
         />
-        <StyledButttonNew text = "HIre Me"/>
+        <StyledButttonNew text = "Hire Me"/>
         
         <StyledTypography
           fontsize="small"
