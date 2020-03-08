@@ -4,6 +4,7 @@ import App from './App'
 import About from './About'
 import Services from './service'
 import Portfolio from './portfolio'
+import ContactUs from './contactus'
 
 const Routers = () => (
     <BrowserRouter>
@@ -12,6 +13,7 @@ const Routers = () => (
      <Route exact path  ='/about' component = {About}/>
      <Route exact path  ='/service' component = {Services}/>
      <Route exact path  ='/portfolio' component = {Portfolio}/>
+     <Route exact path  ='/contactus' component = {ContactUs}/>
     </Switch>    
     </BrowserRouter>
 
