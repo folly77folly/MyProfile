@@ -1,9 +1,10 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
 import { ThemeProvider } from "styled-components";
+import { StyledButttonNew, StyledButttonNew2 } from './atoms/Buttons/button'
 import Navlink from "./molecules/links";
 import StyledLogo from "./atoms/logo/index";
-import HeaderImage from './organisms/header'
 
 const ThemeContext = React.createContext('light')
 const themes = {
@@ -11,7 +12,7 @@ const themes = {
 };
 
 
-function App() {
+function About() {
   return (
     <ThemeProvider theme={themes}>
     <div className="App">
@@ -20,11 +21,12 @@ function App() {
           <StyledLogo color="secondary" children="Personal"></StyledLogo>
           <Navlink />
         </div>
-        <div style={{marginTop:"8rem"}}><HeaderImage /></div> 
+        <div style={{marginTop:"8rem"}}><HeaderImage /></div>         
       </header>
     </div>      
     </ThemeProvider>  
+
   );
 }
 
-export default App;
+export default About;

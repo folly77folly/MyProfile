@@ -21,15 +21,6 @@ function FooterSide() {
           padding="nopadd"
           margin="nomarg"
         />
-        <StyledTypography
-          fontsize="small"
-          color="secondary"
-          fontfamily="primary"
-          fontweight="primary"
-          children="New York"
-          padding="nopadd"
-          margin="nomarg"
-        />
         <HeaderStars />
         <br></br>
         <StyledTypography

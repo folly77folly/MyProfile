@@ -11,8 +11,6 @@ const StyledLogo = styled.h1`
   ${fontsize};
   ${fontweight};
   ${fontfamily};
-  padding-right: 0.6em;
-  padding-left: 0.6em;
   text-decoration: none;
 `;
 
