@@ -1,6 +1,6 @@
 import HeaderImage from '../src/organisms/header'
 import React from 'react'
-import { StyledImage } from '../src/atoms/images/index'
+
 
 
 export default {

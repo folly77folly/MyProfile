@@ -2,47 +2,35 @@ import React from "react";
 import "./linklogo.css";
 import { ThemeProvider } from "styled-components";
 import { StyledTypography } from "../atoms/typography/mixins";
-import HeaderStars from './footer-stars'
+import { StyledButttonNew } from '../atoms/Buttons/button'
 
 const themes = {
   mode: "light"
 };
 
-function FooterSide() {
+function Footerfoot() {
   return (
     <ThemeProvider theme={themes}>
       <div className="d-flex flex-column align-items-center">
-      <div>
+    
       <StyledTypography
           fontsize="xlarge"
           color="secondary"
           fontfamily="primary"
-          children="Rubel Ahamed"
-          padding="nopadd"
-          margin="nomarg"
+          children="You have any project"
         />
+        <StyledButttonNew text = "HIre Me"/>
+        
         <StyledTypography
           fontsize="small"
           color="secondary"
           fontfamily="primary"
           fontweight="primary"
-          children="New York"
-          padding="nopadd"
-          margin="nomarg"
-        />
-        <HeaderStars />
-        <br></br>
-        <StyledTypography
-          fontsize="small"
-          color="secondary"
-          fontfamily="primary"
-          fontweight="primary"
-          children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
-
-        />        
-      </div>
+          children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
+          style={{textAlign:"center", width:"50%"}}/>  
+   
       </div>
     </ThemeProvider>
   );
 }
-export default FooterSide;
+export default Footerfoot;

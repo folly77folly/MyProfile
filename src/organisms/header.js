@@ -5,11 +5,11 @@ import image6 from "../atoms/images/image6.jpg";
 
 function HeaderImage() {
   return (
-    <div className="d-flex justify-content-center">
+    <div className="col-12 d-flex justify-content-end align-items-center">
       <div className="col-md-5">
         <Header1></Header1>
       </div>
-      <div className="col-md-5">
+      <div className="col-md-6 d-flex justify-content-center">
         <StyledImage
           src={image6}
           className="rounded-circle"
