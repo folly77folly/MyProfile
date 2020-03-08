@@ -16,7 +16,7 @@ function Navlink () {
             <li><InboundLink  href="/">Home</InboundLink></li>
             <li><InboundLink  href="/about">About</InboundLink></li>
             <li><InboundLink  href="/service">Service</InboundLink></li>
-            <li><InboundLink  href="/">Portfolio</InboundLink></li>
+            <li><InboundLink  href="/portfolio">Portfolio</InboundLink></li>
             <li><InboundLink  href="/">Contact</InboundLink></li>
         </ul>            
         </ThemeProvider>
