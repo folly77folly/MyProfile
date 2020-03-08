@@ -5,7 +5,7 @@ import image6 from "../atoms/images/image6.jpg";
 
 function HeaderContent1() {
   return (
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-around">
       <div className="col-md-4">
         <StyledImage
           src={image6}
