@@ -3,14 +3,13 @@ import { fontweight } from "../typography/mixins";
 import { fontfamily } from "../typography/mixins";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import {color} from "../color/mixins";
 
 const StyledLink = styled.a`
   ${fontsize};
   ${fontweight};
   ${fontfamily};
-  color : white;
-  &:hover {color : white; font-weight:bolder};
-  &:active {font-weight:bolder};
+  color:white !important;
   padding-right: 0.6em;
   padding-left: 0.6em;
   text-decoration: none;
@@ -25,8 +24,8 @@ StyledLink.PropTypes = {
   ])
 };
 
-StyledLink.defaultProps = {
-  variant: "primary"
-};
+// StyledLink.defaultProps = {
+//   variant: "primary"
+// };
 
 export default StyledLink;

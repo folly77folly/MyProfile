@@ -11,6 +11,7 @@ const themes = {
 
 function Header1 () {
     return (
+
         <ThemeProvider theme={themes}>
         <div>
         <StyledTypography 
@@ -30,9 +31,16 @@ function Header1 () {
          color ="secondary" 
          fontfamily="primary" 
          fontweight="primary"
-         children="Expert in web design and development ui designer
-         dribble behance labs"
+         children="Pyhton Web Developer - Flask/Django Framework - MySQL, MongoDB, Postgres SQL, SQL Server,
+         Microsoft SQL WOrkbench."
          />
+         <StyledTypography
+         fontsize ="large" 
+         color ="secondary" 
+         fontfamily="primary" 
+         fontweight="primary"
+         children="UI/UX Developer - React, HTML5, CSS, Javascript."
+         />         
          <StyledButttonNew text = "Hire Me"/>      
         </div>
 

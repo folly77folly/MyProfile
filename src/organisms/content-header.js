@@ -16,7 +16,7 @@ function Content_Header() {
           backgroundColor="primarylight"
           color="secondary"
           fontsize="large"
-          children="Elegant Themes"
+          children="Financial Softwares"
         />
         </div>
         <div className="d-flex justify-content-center ">
@@ -27,7 +27,7 @@ function Content_Header() {
           backgroundColor="primary"
           color="primary"
           fontsize="large"
-          children="Ecology Themes"
+          children="School Management Solution"
         />
           </div>
           <div>
@@ -37,7 +37,7 @@ function Content_Header() {
           backgroundColor="primary"
           color="primary"
           fontsize="large"
-          children="Avada Themes"
+          children="Mobile Application"
         />
           </div>
         </div>

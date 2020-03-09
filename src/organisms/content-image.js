@@ -1,9 +1,9 @@
 import React from "react";
 import { StyledImage } from "../atoms/images/index";
-import image4 from "../atoms/images/image4.jpg";
-import image5 from "../atoms/images/image5.jpg";
-import image6 from "../atoms/images/image6.jpg";
-import image7 from "../atoms/images/image7.jpg";
+import image4 from "../atoms/images/vkleen.png";
+import image5 from "../atoms/images/hire.png";
+import image6 from "../atoms/images/cooperative.png";
+import image7 from "../atoms/images/hire.png";
 import {ThemeProvider} from 'styled-components'
 import { StyledButttonNew } from '../atoms/Buttons/button'
 import '../App.css';

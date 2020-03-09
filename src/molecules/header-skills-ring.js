@@ -12,7 +12,7 @@ function HeaderSkillsRing () {
     return (
         <ThemeProvider theme={themes}>
         <div className="d-flex">
-         <Circletube children="Adobe Photoshop"
+         <Circletube children="Django"
           height ="xlarge"
           width ="xlarge"
           backgroundColor="secondary"

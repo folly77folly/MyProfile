@@ -32,7 +32,7 @@ function HeaderContent () {
          color ="secondary" 
          fontfamily="primary" 
          fontweight="primary"
-         children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+         children="I am passionate about programming. It’s the one thing I think I could do for free. Cool technologies, cooler gadgets, processing power, plenty of RAM, a clear plan, internet access, headphones and it’s a party for me! I love to take code to production I love the god’ feeling I get when I see someone served by my innovation..."
          />
          <StyledButttonNew text = "Download CV"/>      
         </div>

@@ -32,14 +32,18 @@ function ContentHeader () {
          color ="secondary" 
          fontfamily="primary" 
          fontweight="primary"
-         children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+         children="Currently I provide services for Ten(10)
+         different organisations ranging from financial organisations
+         Asset Management Individuals and a few cooperative societies.
+         All these businesses comsume four(4) diffent software solutions
+         developed and maintained by me."
          />
          <StyledTypography
          fontsize ="small" 
          color ="secondary" 
          fontfamily="primary" 
          fontweight="primary"
-         children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irur."
+         children="My business is not limited to developing and deploying software, we also provide quality and reliable information on IT for business managers to enable them take wise business decisions. The companies that engaged My services have continued to retain My services for we saved them both time and money as they implemented their IT infrastructure."
          />         
          <StyledButttonNew text = "Read More"/>  
         </div>

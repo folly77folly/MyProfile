@@ -1,26 +1,43 @@
-import React from 'react'
-import InboundLink from '../atoms/Links'
-import './linklogo.css'
-import { ThemeProvider } from "styled-components"
-
+import React from "react";
+import styled from "styled-components";
+import InboundLink from "../atoms/Links";
+import "./linklogo.css";
+import { ThemeProvider } from "styled-components";
+import { NavLink } from "react-router-dom";
+import ThemeContext from '../App'
 
 const themes = {
-    mode: "light"
-  };
-  
+  mode: "light"
+};
 
-function Navlink () {
-    return (
-        <ThemeProvider theme={themes}>
-        <ul className="d-flex link">
-            <li><InboundLink  href="/" activeClassName="active" >Home</InboundLink></li>
-            <li><InboundLink  href="/about">About</InboundLink></li>
-            <li><InboundLink  href="/service">Service</InboundLink></li>
-            <li><InboundLink  href="/portfolio">Portfolio</InboundLink></li>
-            <li><InboundLink  href="/contactus">Contact</InboundLink></li>
-        </ul>            
-        </ThemeProvider>
+function Navlink() {
+  const contextType = ThemeContext
+  let menuArray = [
+    ["/", "Home"],
+    ["/about", "About Me"],
+    ["/service", "Service"],
+    ["/portfolio", "Portfolio"],
+    ["/contactus", "Contact Me"]
+  ];
+  console.log("hiiii",contextType)
+  return (
+    <ThemeProvider theme={contextType}>
+      
+      <UlStyle className="d-flex link">
+        {menuArray.map(el => (
+          <NavLink to={el[0]} exact activeClassName="active">
+            <InboundLink>{el[1]}</InboundLink>
+          </NavLink>
+        ))}
+      </UlStyle>
+    </ThemeProvider>
+  );
+}
+export default Navlink;
 
-    );
+const UlStyle = styled.ul`
+  .active a {
+    font-weight: bolder;
+    text-decoration: underline;
   }
-export default Navlink
+`;

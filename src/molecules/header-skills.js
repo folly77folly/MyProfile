@@ -31,8 +31,24 @@ function HeaderSkills() {
           color="secondary"
           fontfamily="primary"
           fontweight="primary"
-          children="Akeem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut hdk. sed do eiusmod tempor incididunt ut hdk"
+          children="Server side (Python with Flask Framework, Database modeling and handling with Mysql, Microsoft Sql server, AJAX Technologies)"
         />
+        <StyledTypography
+        style={{textAlign:"center"}}
+          fontsize="xsmall"
+          color="secondary"
+          fontfamily="primary"
+          fontweight="primary"
+          children="Front End (HTML 5, CSS, Responsive Website design using Bootstrap Classes and CSS Media Queries, Javascript, JQuery)"
+        /> 
+        <StyledTypography
+        style={{textAlign:"center"}}
+          fontsize="xsmall"
+          color="secondary"
+          fontfamily="primary"
+          fontweight="primary"
+          children="Version Control using Git, understanding of Agile Software Development using Project Management tools such as Trello, Webservices development, Integration to Payment Gateway"
+        />                
       </div>
     </ThemeProvider>
   );
