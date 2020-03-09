@@ -19,7 +19,7 @@ function About() {
     <div className="App">
       <header className="App-header">
         <div className="d-flex justify-content-around align-items-end">
-          <StyledLogo color="secondary" children="Personal"></StyledLogo>
+          <StyledLogo color="secondary" children="MY PROFILE"></StyledLogo>
           <Navlink />
         </div>
         <div style={{marginTop:"8rem"}}><HeaderContent1 /></div>

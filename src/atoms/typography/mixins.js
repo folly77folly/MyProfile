@@ -5,10 +5,10 @@ import PropTypes from 'prop-types'
 
 
 export const fontsize = theme.variants("mode", "fontsize", {
-    primary: { light: "font-size :0.8rem", dark: "font-size :0.8rem" },
+    primary: { light: "font-size :0.8rem", dark: "font-size :10rem" },
     medium: { light: "font-size :0.7rem", dark: "font-size :0.7rem" },
     xxsmall: { light: "font-size :0.3rem", dark: "font-size :0.7rem" },
-    xsmall: { light: "font-size :0.5rem", dark: "font-size :0.7rem" },
+    xsmall: { light: "font-size :0.7rem", dark: "font-size :0.7rem" },
     large: { light: "font-size :1.2rem", dark: "font-size :1.2rem" },
     xlarge: { light: "font-size :2rem", dark: "font-size :2rem" },
     xxlarge: { light: "font-size :3.5rem", dark: "font-size :3.5rem" },

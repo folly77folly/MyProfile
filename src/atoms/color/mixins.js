@@ -2,7 +2,7 @@ import theme from "styled-theming";
 
 export const color = theme.variants("mode", "color", {
     primary: { light: 'color:black', dark: 'color:white' },
-    secondary: { light: 'color:white', dark: 'color:black' },
+    secondary: { light: 'color:white', dark: 'color:yellow' },
     primarydark: { light: 'color:#271661', dark: 'color:#271661' },
     primarylight: { light: 'color:#6f87ff', dark: 'color:#6f87ff'},
     primarydarklight: { light: 'color:#685c90', dark: 'color:#685c90'},

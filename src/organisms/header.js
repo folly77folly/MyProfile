@@ -1,7 +1,7 @@
 import React from "react";
 import Header1 from "../molecules/header";
 import { StyledImage } from "../atoms/images/index";
-import image6 from "../atoms/images/image6.jpg";
+import profile from "../atoms/images/profile1.jpg";
 
 function HeaderImage() {
   return (
@@ -11,7 +11,7 @@ function HeaderImage() {
       </div>
       <div className="col-md-6 d-flex justify-content-center">
         <StyledImage
-          src={image6}
+          src={profile}
           className="rounded-circle"
           height="xxxlarge"
           width="xxxlarge"

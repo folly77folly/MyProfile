@@ -1,12 +1,12 @@
 import React from "react";
-import HeaderSkills2 from "../molecules/header-skills";
+import HeaderSkills3 from "../molecules/header-skills2";
 import Btnlinks from "../molecules/links2";
 
 function ContentHeadContent() {
   return (
     <div className="d-flex flex-column align-items-center">
-      <div className="col-8">
-        <HeaderSkills2 />
+      <div className="col-8 d-flex justify-content-center">
+        <HeaderSkills3 />
       </div>
       <div>
         <Btnlinks />

@@ -1,8 +1,6 @@
 import React from "react";
 import ContentHeader from "../molecules/content-header";
-import { StyledImage } from "../atoms/images/index";
 import  Line  from "../atoms/styledcomponets/boxes";
-import image6 from "../atoms/images/image6.jpg";
 
 function Content_Header() {
   return (
@@ -18,7 +16,7 @@ function Content_Header() {
           backgroundColor="primarylight"
           color="secondary"
           fontsize="large"
-          children="Elegant Themes"
+          children="Financial Softwares"
         />
         </div>
         <div className="d-flex justify-content-center ">
@@ -29,7 +27,7 @@ function Content_Header() {
           backgroundColor="primary"
           color="primary"
           fontsize="large"
-          children="Ecology Themes"
+          children="School Management Solution"
         />
           </div>
           <div>
@@ -39,7 +37,7 @@ function Content_Header() {
           backgroundColor="primary"
           color="primary"
           fontsize="large"
-          children="Avada Themes"
+          children="Mobile Application"
         />
           </div>
         </div>
