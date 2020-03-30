@@ -5,9 +5,11 @@ import About from './About'
 import Services from './service'
 import Portfolio from './portfolio'
 import ContactUs from './contactus'
+import NavBar from "./organisms/navbar";
 
 const Routers = () => (
     <BrowserRouter>
+    <NavBar/>
     <Switch>
      <Route exact path  ='/' component = {App}/>     
      <Route exact path  ='/about' component = {About}/>

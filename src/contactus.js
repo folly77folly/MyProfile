@@ -17,10 +17,6 @@ function ContactUs() {
     <ThemeProvider theme={themes}>
     <div className="App">
       <header className="App-header">
-        <div className="d-flex justify-content-around align-items-end">
-          <StyledLogo color="secondary" children="MY PROFILE"></StyledLogo>
-          <Navlink />
-        </div>
         <div style={{marginTop:"1rem"}}><FooterHeader /></div> 
         <div style={{marginTop:"1rem"}}><Footer /></div> 
       </header>
