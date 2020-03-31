@@ -10,13 +10,12 @@ import ThemeContext from '../App'
 function Navlink() {
   const contextType = ThemeContext
   let menuArray = [
-    ["/", "Home"],
-    ["/about", "About Me"],
-    ["/service", "Service"],
-    ["/portfolio", "Portfolio"],
-    ["/contactus", "Contact Me"]
+    ["/", "Home",1],
+    ["/about", "About Me",2],
+    ["/service", "Service",3],
+    ["/portfolio", "Portfolio",4],
+    ["/contactus", "Contact Me",5]
   ];
-  console.log("hiiii",contextType)
   
   const myClick = function(){
     var x = document.getElementsByClassName('cont')
@@ -31,8 +30,8 @@ function Navlink() {
       <DivStyle>
       <UlStyle className="link align-items-center">
         {menuArray.map(el => (
-          <NavLink to={el[0]} exact activeClassName="active">
-            <InboundLink>{el[1]}</InboundLink>
+          <NavLink key={el[2]} to={el[0]} exact activeClassName="active">
+            <InboundLink key={el[2]}>{el[1]}</InboundLink>
           </NavLink>
         ))}
       </UlStyle>
@@ -56,6 +55,6 @@ font-size:1.2rem;
 `;
 
 const DivStyle = styled.div`
-align-items:flex-end;
+align-items:center;
 display:flex;
 `

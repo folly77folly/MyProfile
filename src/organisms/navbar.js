@@ -35,7 +35,7 @@ overflow:hidden;
     font-size:2rem;
   }
   div{
-
+    align-items:start;
     ul a{
       display:none;
     }

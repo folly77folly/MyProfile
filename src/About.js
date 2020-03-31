@@ -1,13 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { ThemeProvider } from "styled-components";
-import Navlink from "./molecules/links";
-import StyledLogo from "./atoms/logo/index";
+
 import HeaderContent1 from './organisms/header-content'
 import HeaderSkill from './organisms/header-skills'
 
-const ThemeContext = React.createContext('light')
+
 const themes = {
   mode: "light"
 };

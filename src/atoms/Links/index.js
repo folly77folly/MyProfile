@@ -3,7 +3,6 @@ import { fontweight } from "../typography/mixins";
 import { fontfamily } from "../typography/mixins";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import {color} from "../color/mixins";
 
 const StyledLink = styled.a`
   ${fontsize};
@@ -15,7 +14,7 @@ const StyledLink = styled.a`
   text-decoration: none;
 `;
 
-StyledLink.PropTypes = {
+StyledLink.propTypes = {
   variant: PropTypes.oneOf([
     "primary",
     "secondary",
@@ -24,8 +23,5 @@ StyledLink.PropTypes = {
   ])
 };
 
-// StyledLink.defaultProps = {
-//   variant: "primary"
-// };
 
 export default StyledLink;
