@@ -12,55 +12,55 @@ const themes = {
   mode : "light",
 };
 
-function Content_Images() {
+function ContentImages() {
   return (
     <React.Fragment>
     <ThemeProvider theme={themes}>
     <div className="col-12 d-flex justify-content-center p-3" style={{height:"45rem",width:"40rem"}}>
     <div>
       <div className="p-2 cont" ><StyledImage className ="image" src={image4} height="xylarge"width="xylarge"/>  
-        <div class="middle">
-          <div class="text">Web UI</div>
+        <div className="middle">
+          <div className="text">Web UI</div>
         </div>
       </div>
       <div className="p-2 cont" ><StyledImage className ="image"  src={image5} height="xylarge"width="xylarge"/>
-        <div class="middle">
-          <div class="text">Web UI</div>
+        <div className="middle">
+          <div className="text">Web UI</div>
         </div>      
       </div>
       <div className="p-2 cont" ><StyledImage className ="image"  src={image7} height="xylarge"width="xylarge"/>
-        <div class="middle">
-          <div class="text">Web UI</div>
+        <div className="middle">
+          <div className="text">Web UI</div>
         </div>       
       </div>
     </div>
     <div>
     <div className="p-2 cont" style={{height:"50%"}} ><StyledImage className ="image"  src={image7} style={{height:"100%",width:"100%"}}/>
-    <div class="middle">
-          <div class="text">Web UI</div>
+    <div className="middle">
+          <div className="text">Web UI</div>
         </div>     
     </div>
 
     <div className="p-2 cont" style={{height:"50%"}} ><StyledImage className ="image"  src={image6} style={{height:"100%",width:"100%"}}/>
-        <div class="middle">
-          <div class="text">Web UI</div>
+        <div className="middle">
+          <div className="text">Web UI</div>
         </div>     
     </div>    
     </div>
     <div>
     <div className="p-2 cont" ><StyledImage className ="image" src={image6} height="xylarge"width="xylarge"/>
-        <div class="middle">
-          <div class="text">Web UI</div>
+        <div className="middle">
+          <div className="text">Web UI</div>
         </div>       
     </div>
     <div className="p-2 cont" ><StyledImage className ="image" src={image5} height="xylarge"width="xylarge"/>
-        <div class="middle">
-          <div class="text">Web UI</div>
+        <div className="middle">
+          <div className="text">Web UI</div>
         </div>       
     </div>
     <div className="p-2 cont" ><StyledImage className ="image" src={image4} height="xylarge"width="xylarge"/>
-        <div class="middle">
-          <div class="text">Web UI</div>
+        <div className="middle">
+          <div className="text">Web UI</div>
         </div>  
     </div>      
     </div>
@@ -70,4 +70,4 @@ function Content_Images() {
     </React.Fragment>
   );
 }
-export default Content_Images;
+export default ContentImages;
