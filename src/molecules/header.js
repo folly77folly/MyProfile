@@ -10,40 +10,53 @@ const themes = {
   
 
 function Header1 () {
+
+  const values = [
+    {
+      fontsize : "xlarge",
+      color : "primarylight",
+      fontfamily : "primary",
+      children : "Hello"
+    },
+    {
+      fontsize : "xlarge",
+      color : "secondary",
+      fontfamily : "primary",
+      children : "I'M Gbolahan Eniodunmo"
+    },
+    {
+      fontsize : "large",
+      color : "secondary",
+      fontfamily : "primary",
+      fontweight : "primary",
+      children : "Pyhton Web Developer - Flask/Django Framework - MySQL, MongoDB, Postgres SQL, SQL Server,Microsoft SQL WOrkbench.",
+    }
+    ,
+    {
+      fontsize : "large",
+      color : "secondary",
+      fontfamily : "primary",
+      fontweight : "primary",
+      children : "UI/UX Developer - React, HTML5, CSS, Javascript.",
+    }
+  ]
+  
     return (
 
         <ThemeProvider theme={themes}>
+
         <div>
-        <StyledTypography 
-        fontsize ="xlarge" 
-        color="primarylight" 
-        fontfamily="primary"
-        children ="Hello"      
-        />
-         <StyledTypography
-         fontsize ="xlarge" 
-         color="secondary" 
-         fontfamily="primary"
-         children ="I'M Gbolahan Eniodunmo"
-          />
-         <StyledTypography
-         fontsize ="large" 
-         color ="secondary" 
-         fontfamily="primary" 
-         fontweight="primary"
-         children="Pyhton Web Developer - Flask/Django Framework - MySQL, MongoDB, Postgres SQL, SQL Server,
-         Microsoft SQL WOrkbench."
-         />
-         <StyledTypography
-         fontsize ="large" 
-         color ="secondary" 
-         fontfamily="primary" 
-         fontweight="primary"
-         children="UI/UX Developer - React, HTML5, CSS, Javascript."
-         />         
+          { values.map(value=>(
+            <StyledTypography
+            fontsize = {value.fontsize}
+            color ={value.color}
+            fontfamily = {value.fontfamily}
+            fontweight = {value.fontweight}
+            children ={value.children}
+            />
+    ))}
          <StyledButttonNew text = "Hire Me"/>      
         </div>
-
         </ThemeProvider>
 
     );
