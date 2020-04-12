@@ -48,6 +48,13 @@ const ImageContainer = styled.div`
 display:flex;
 justify-content:flex-end;
 
+@media(max-width:900px){
+  justify-content:center;
+  img{
+    height:100%;
+    width:90%;
+  }
 
+}
 `
 export default HeaderImage;
