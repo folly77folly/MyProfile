@@ -6,6 +6,7 @@ import { height,width } from '../typography/mixins'
 export const StyledImage = styled.img.attrs({
     alt : 'myimage',
 })
+
 `${height};
 ${width};
 `
