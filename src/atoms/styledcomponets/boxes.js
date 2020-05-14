@@ -19,6 +19,7 @@ ${backgroundColor};
 ${fontsize};
 ${padding};
 ${margin};
+&:hover {background-color : #6f87ff;}
 `
 
 export default Line
