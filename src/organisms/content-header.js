@@ -1,48 +1,78 @@
 import React from "react";
 import ContentHeader from "../molecules/content-header";
 import  Line  from "../atoms/styledcomponets/boxes";
+import styled from 'styled-components';
 
 function Content_Header() {
   return (
-    <div className="d-flex justify-content-center">
-      <div className="col-md-5 ">
-        <ContentHeader></ContentHeader>
-      </div>
-      <div className="col-md-5 d-flex flex-column justify-content-end">
-        <div className="d-flex justify-content-center">
+    <Wrapper>
+      <ActiveStyle>
+      <ContentHeader></ContentHeader>
+      </ActiveStyle>
+      <BoxContainer>
         <Line
           height="xylarge"
           width="xylarge"
-          backgroundColor="primarylight"
-          color="secondary"
+          color="primary"
+          backgroundColor="primary"
           fontsize="large"
           children="Financial Softwares"
         />
-        </div>
-        <div className="d-flex justify-content-center ">
-          <div>
-          <Line
-          height="xylarge"
-          width="xylarge"
-          backgroundColor="primary"
-          color="primary"
-          fontsize="large"
-          children="School Management Solution"
-        />
-          </div>
-          <div>
-          <Line
-          height="xylarge"
-          width="xylarge"
-          backgroundColor="primary"
-          color="primary"
-          fontsize="large"
-          children="Mobile Application"
-        />
-          </div>
-        </div>
-       </div>      
-    </div>
+        <InnerBoxContainer>
+            <Line
+              height="xylarge"
+              width="xylarge"
+              backgroundColor="primary"
+              color="primary"
+              fontsize="large"
+              children="School Management Solution"
+            />
+            <Line
+            height="xylarge"
+            width="xylarge"
+            backgroundColor="primary"
+            color="primary"
+            fontsize="large"
+            children="Mobile Application"
+            />
+        </InnerBoxContainer>
+       </BoxContainer>      
+    </Wrapper>
   );
 }
 export default Content_Header;
+
+const Wrapper = styled.div`
+width : 100%;
+display:flex;
+
+
+@media(max-width:900px){
+
+  flex-wrap:wrap ;
+}
+`
+const ActiveStyle = styled.div`
+width : 50%;
+
+@media(max-width:900px){
+  width : 100%;
+}
+`
+
+const BoxContainer = styled.div`
+width : 50%;
+display:flex;
+align-items:center;
+flex-direction:column;
+
+@media(max-width:900px){
+  width : 100%;
+}
+`
+
+const InnerBoxContainer = styled.div`
+width : 100%;
+display:flex;
+justify-content:center;
+`

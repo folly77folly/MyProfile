@@ -32,10 +32,10 @@ function ContentHeader () {
          color ="secondary" 
          fontfamily="primary" 
          fontweight="primary"
-         children="Currently I provide services for Ten(10)
+         children="Currently I provide services for Ten(10) 
          different organisations ranging from financial organisations
          Asset Management Individuals and a few cooperative societies.
-         All these businesses comsume four(4) diffent software solutions
+         All these businesses consume four(4) diffent software solutions
          developed and maintained by me."
          />
          <StyledTypography
