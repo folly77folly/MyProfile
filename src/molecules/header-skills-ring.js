@@ -2,6 +2,7 @@ import React from 'react'
 import './linklogo.css'
 import { ThemeProvider } from "styled-components"
 import Circletube from '../atoms/circle/index'
+import styled from 'styled-components'
 
 const themes = {
     mode: "light"
@@ -11,7 +12,7 @@ const themes = {
 function HeaderSkillsRing () {
     return (
         <ThemeProvider theme={themes}>
-        <div className="d-flex">
+        <Wrapper>
          <Circletube children="Django"
           height ="xlarge"
           width ="xlarge"
@@ -32,9 +33,20 @@ function HeaderSkillsRing () {
           width ="xlarge"
           backgroundColor="secondary"
          />                           
-        </div>
+        </Wrapper>
         </ThemeProvider>
 
     );
   }
 export default HeaderSkillsRing
+const Wrapper = styled.div`
+display:flex;
+flex-wrap:wrap;
+
+@media(max-width:900px){
+  width :100%;
+  display:flex;
+  justify-content:center;
+}
+
+`

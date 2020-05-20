@@ -18,7 +18,9 @@ function ContentImages() {
     <ThemeProvider theme={themes}>
     <div className="col-12 d-flex justify-content-center p-3" style={{height:"45rem",width:"40rem"}}>
     <div>
-      <div className="p-2 cont" ><StyledImage className ="image" src={image4} height="xylarge"width="xylarge"/>  
+      <div className="p-2 cont" >a
+      dsfsdfdsfdsfs
+      <StyledImage className ="image" src={image4} height="xylarge"width="xylarge"/>  
         <div className="middle">
           <div className="text">Web UI</div>
         </div>

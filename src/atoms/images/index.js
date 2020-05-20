@@ -9,4 +9,14 @@ export const StyledImage = styled.img.attrs({
 
 `${height};
 ${width};
+border-radius : 50%;
+transition-duration: 0.8s;
+transition-property: transform;
+&:hover{
+    -webkit-transform:rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+};
 `

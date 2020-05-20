@@ -11,11 +11,11 @@ const themes = {
 function Portfolio() {
   return (
     <ThemeProvider theme={themes}>
-    <div className="App">
-      <header className="App-header">
+
         <div style={{marginTop:"2rem"}}><ContentHeadContent /></div> 
-        <div className="d-flex flex-column align-items-center" style={{marginTop:"2rem"}}><ContentImages /></div> 
-      </header>
+        <div className="d-flex flex-column align-items-center" style={{marginTop:"2rem"}}>
+          ff<ContentImages />
+          dsgddfgdfgdfgdfgdfgfd
     </div>      
     </ThemeProvider>
   );

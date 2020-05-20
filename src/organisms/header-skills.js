@@ -1,17 +1,25 @@
 import React from "react";
 import HeaderSkills from "../molecules/header-skills";
 import HeaderSkillsRing from "../molecules/header-skills-ring";
+import styled from 'styled-components'
 
 function HeaderSkill() {
   return (
-    <div className="d-flex flex-column align-items-center">
-      <div className="col-4 ">
+    <SkillsWrapper>
         <HeaderSkills />
-      </div>
-      <div>
+      {/* <div>
         <HeaderSkillsRing />
-      </div>
-    </div>
+      </div> */}
+    </SkillsWrapper>
   );
 }
 export default HeaderSkill;
+
+const SkillsWrapper = styled.div`
+padding :1rem;
+display:flex;
+flex-direction:column;
+align-items:center;
+// background-Color : black;
+
+`
