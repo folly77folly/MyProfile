@@ -45,10 +45,10 @@ export default Content_Header;
 const Wrapper = styled.div`
 width : 100%;
 display:flex;
+padding: 1rem;
 
 
 @media(max-width:900px){
-
   flex-wrap:wrap ;
 }
 `

@@ -24,4 +24,9 @@ export default Services;
 const Wrapper = styled.div`
 margin-top:8rem;
 padding: 0.5rem 4rem;
+
+@media(max-width:900px){
+  padding :0;
+  margin-top:2rem;
+}
 `;

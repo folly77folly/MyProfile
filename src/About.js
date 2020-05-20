@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 
 import HeaderContent1 from './organisms/header-content'
 import HeaderSkill from './organisms/header-skills'
-
+import styled from 'styled-components'
 
 const themes = {
   mode: "light"
@@ -16,7 +16,9 @@ function About() {
     <ThemeProvider theme={themes}>
     <div className="App">
       <header className="App-header">
-        <div style={{marginTop:"8rem"}}><HeaderContent1 /></div>
+        <Wrapper>
+          <HeaderContent1/>
+        </Wrapper>
         <div style={{marginTop:"4rem"}}><HeaderSkill /></div>       
       </header>
     </div>      
@@ -26,3 +28,13 @@ function About() {
 }
 
 export default About;
+
+const Wrapper = styled.div`
+margin-top:8rem;
+padding: 0.5rem 4rem;
+
+@media(max-width : 900px){
+  margin-top:2rem;
+padding: 0;
+}
+`;

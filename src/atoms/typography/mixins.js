@@ -1,5 +1,5 @@
 import theme from "styled-theming";
-import {color} from '../color/mixins'
+import {color, backgroundColor} from '../color/mixins'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
@@ -27,6 +27,7 @@ export const fontsize = theme.variants("mode", "fontsize", {
   });
 
   export const width = theme.variants("mode", "width", {
+    xsmall : {light : "width :100px", dark :"width :100px"},
     small: { light: "width :1rem", dark: "width :1rem" },
     medium: { light: "width :2rem", dark: "width :2rem" },
     large: { light: "width :6rem", dark: "width :6rem" },
@@ -37,6 +38,7 @@ export const fontsize = theme.variants("mode", "fontsize", {
   });
 
   export const height = theme.variants("mode", "height", {
+    xsmall: { light: "height :2px", dark: "height :2px" },
     small: { light: "height :1rem", dark: "height :1rem" },
     medium: { light: "height :2rem", dark: "height :2rem" },
     large: { light: "height :6rem", dark: "height :6rem" },
@@ -81,6 +83,10 @@ export const fontsize = theme.variants("mode", "fontsize", {
   ${fontfamily};
   ${padding};
   ${margin};
+  ${height};
+  ${width};
+  ${backgroundColor};
+  text-align:${props=> props.center ? "center" : ''};
   `
   
   StyledTypography.PropTypes ={
