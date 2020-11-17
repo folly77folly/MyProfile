@@ -16,7 +16,7 @@ const Routers = () => (
      <Route exact path  ='/service' component = {Services}/>
      <Route exact path  ='/portfolio' component = {Portfolio}/>
      <Route exact path  ='/contactus' component = {ContactUs}/>
-    </Switch>    
+    </Switch> 
     </BrowserRouter>
 
 )

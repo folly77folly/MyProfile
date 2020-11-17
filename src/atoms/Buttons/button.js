@@ -1,14 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Loader from 'react-loader-spinner'
 import {StyledButton} from './styles'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
 
 export  function StyledButttonNew(props) {
+    const [isLoading, setIsLoading] = useState(false)
+
+    const getDownload =()=>{
+        console.log('isLoading')
+        setIsLoading(!isLoading)
+    }
+    const spinner = <Loader type="ThreeDots" color="#271661" height={15} width={100} />
     return (
         <StyledButton className ="btn" 
         color="primary" 
         fontweight= "secondary"
         backgroundColor="primary"
-    >{props.text}</StyledButton>
+        onClick ={()=> getDownload() }
+        >
+           {isLoading ? spinner:props.text} 
+        </StyledButton>
         )
 }
 

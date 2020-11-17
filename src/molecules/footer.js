@@ -11,7 +11,7 @@ const themes = {
 function Footerfoot() {
   return (
     <ThemeProvider theme={themes}>
-      <div className="d-flex flex-column align-items-center">
+      <div className="d-flex flex-column align-items-center" style={{marginTop:230}}>
     
       <StyledTypography
           fontsize="xlarge"

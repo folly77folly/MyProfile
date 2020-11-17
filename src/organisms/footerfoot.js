@@ -5,10 +5,10 @@ import Footerfoot from "../molecules/footer";
 function Footer() {
   return (
     <div className="d-flex flex-column align-items-center">
-      <div className="col-md">
-        <div ><Footerfoot></Footerfoot></div>
-      </div>
-      <div className="col-md">
+      {/* <div className="col-md one"> */}
+        <Footerfoot></Footerfoot>
+      {/* </div> */}
+      <div className="col-md two">
         <FooterSocials
         />
       </div>
