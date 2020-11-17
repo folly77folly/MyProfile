@@ -10,45 +10,40 @@ import axios from "axios";
 const themes = {
   mode: "light",
 };
-
 const reducer = (state, action) => {
-  if (action.type === "loading") {
-    return state;
-  } else if (action.type === "SEND_MESSAGE") {
-    return {
-      ...state,
-      isLoading: true,
-    };
-  } else if (action.type === "SUCCESS") {
-    return {
-      ...state,
-      isLoading: false,
-      showAlert: true,
-      message: action.payload,
-    };
-  } else if (action.type === "MISSING_VALUE") {
-    return {
-      ...state,
-      isError: true,
-      showAlert: true,
-      message: "Fill all Values to Submit",
-    };
-  } else if (action.type === "ERROR") {
-    return {
-      ...state,
-      isLoading: false,
-      isError: true,
-      showAlert: true,
-      message: action.payload,
-    };
-  } else if (action.type === "CLOSE_MODAL") {
-    return {
-      ...state,
-      showAlert: false,
-      message: "",
-    };
-  } else {
-    return state;
+  switch (action) {
+    case "loading":
+      return state;
+    case "SUCCESS":
+      return {
+        ...state,
+        isLoading: false,
+        showAlert: true,
+        message: action.payload,
+      };
+    case "MISSING_VALUE":
+      return {
+        ...state,
+        isError: true,
+        showAlert: true,
+        message: "Fill all Values to Submit",
+      };
+    case "ERROR":
+      return {
+        ...state,
+        isLoading: false,
+        isError: true,
+        showAlert: true,
+        message: action.payload,
+      };
+    case "CLOSE_MODAL":
+      return {
+        ...state,
+        showAlert: false,
+        message: "",
+      };
+    default:
+      return state;
   }
 };
 
