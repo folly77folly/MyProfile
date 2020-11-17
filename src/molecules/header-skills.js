@@ -38,10 +38,10 @@ function HeaderSkills() {
           children="Server side (Python with Flask, Django Framework and Cake-PHP, Database modeling and handling with Postgres SQL, Mysql, Microsoft Sql server, AJAX Technologies)"
         />
         <IconStyle>
-          <i class="devicon-python-plain"></i>
-          <i class="devicon-postgresql-plain"></i>
-          <i class="devicon-django-plain"></i>
-          <i class="devicon-php-plain"></i>
+          <i className="devicon-python-plain"></i>
+          <i className="devicon-postgresql-plain"></i>
+          <i className="devicon-django-plain"></i>
+          <i className="devicon-php-plain"></i>
         </IconStyle>
         </SkillsStyle>
         <SkillsStyle>

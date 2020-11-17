@@ -2,7 +2,6 @@ import React,  { useState, useReducer,useEffect } from "react";
 import "./linklogo.css";
 import { ThemeProvider } from "styled-components";
 import { StyledTypography } from "../atoms/typography/mixins";
-import HeaderStars from './footer-stars'
 import { StyledButton } from "../atoms/Buttons/styles";
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"

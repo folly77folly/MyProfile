@@ -1,7 +1,7 @@
 import theme from "styled-theming";
 import {color, backgroundColor} from '../color/mixins'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
+import propTypes from 'prop-types'
 
 
 export const fontsize = theme.variants("mode", "fontsize", {
@@ -89,8 +89,8 @@ export const fontsize = theme.variants("mode", "fontsize", {
   text-align:${props=> props.center ? "center" : ''};
   `
   
-  StyledTypography.PropTypes ={
-    variant:PropTypes.oneOf(["primary","secondary","primarylight","nomargin","nopadding"])
+  StyledTypography.propTypes ={
+    variant:propTypes.oneOf(["primary","secondary","primarylight","nomargin","nopadding"])
   }
   
   StyledTypography.defaultProps = {

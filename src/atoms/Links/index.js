@@ -4,7 +4,7 @@ import { fontfamily } from "../typography/mixins";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-const StyledLink = styled.a`
+const StyledLink = styled.span`
   ${fontsize};
   ${fontweight};
   ${fontfamily};

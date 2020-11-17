@@ -46,13 +46,14 @@ function Header1 () {
         <ThemeProvider theme={themes}>
 
         <div>
-          { values.map(value=>(
+          { values.map((value, index)=>(
             <StyledTypography
             fontsize = {value.fontsize}
             color ={value.color}
             fontfamily = {value.fontfamily}
             fontweight = {value.fontweight}
             children ={value.children}
+            key ={index}
             />
     ))}
          <StyledButttonNew text = "Hire Me"/>      

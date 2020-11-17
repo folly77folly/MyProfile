@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.css';
 import theme from "styled-theming";
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import {color,backgroundColor} from "../color/mixins"
 import {fontsize, fontweight} from "../typography/mixins"
 
@@ -32,8 +32,8 @@ padding-left: 0.6em;
 text-align: center;
 `
 
-StyledButton.PropTypes ={
-  variant:PropTypes.oneOf(["primary","secondary"])
+StyledButton.propTypes ={
+  variant:propTypes.oneOf(["primary","secondary"])
 }
 
 StyledButton.defaultProps = {

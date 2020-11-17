@@ -1,6 +1,5 @@
 import React from "react";
 import HeaderSkills from "../molecules/header-skills";
-import HeaderSkillsRing from "../molecules/header-skills-ring";
 import styled from 'styled-components'
 
 function HeaderSkill() {
