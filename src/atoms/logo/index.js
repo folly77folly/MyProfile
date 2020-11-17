@@ -4,7 +4,7 @@ import { fontweight } from "../typography/mixins";
 import { fontfamily } from "../typography/mixins";
 
 import styled from "styled-components";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 
 const StyledLogo = styled.h1`
   ${color};
@@ -14,8 +14,8 @@ const StyledLogo = styled.h1`
   text-decoration: none;
 `;
 
-StyledLogo.PropTypes = {
-  variant: PropTypes.oneOf([
+StyledLogo.propTypes = {
+  variant: propTypes.oneOf([
     "primary",
     "secondary",
     "primarylight",

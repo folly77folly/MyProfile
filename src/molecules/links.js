@@ -20,7 +20,6 @@ function Navlink() {
   const myClick = function(){
     var x = document.getElementsByClassName('cont')
     var y = document.getElementsByClassName('link ')
-    console.log(y[0]);
     x[0].classList.toggle("change");
     y[0].classList.toggle("responsive");
   }
