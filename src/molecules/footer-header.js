@@ -14,31 +14,26 @@ const themes = {
 const reducer = (state, action) => {
   if (action.type === "loading") {
     return state;
-  }
-  if (action.type === "SEND_MESSAGE") {
+  } else if (action.type === "SEND_MESSAGE") {
     return {
       ...state,
       isLoading: true,
     };
-  }
-  if (action.type === "SUCCESS") {
+  } else if (action.type === "SUCCESS") {
     return {
       ...state,
       isLoading: false,
       showAlert: true,
       message: action.payload,
     };
-  }
-  if (action.type === "MISSING_VALUE") {
+  } else if (action.type === "MISSING_VALUE") {
     return {
       ...state,
       isError: true,
       showAlert: true,
       message: "Fill all Values to Submit",
     };
-  }
-
-  if (action.type === "ERROR") {
+  } else if (action.type === "ERROR") {
     return {
       ...state,
       isLoading: false,
@@ -46,16 +41,15 @@ const reducer = (state, action) => {
       showAlert: true,
       message: action.payload,
     };
-  }
-
-  if (action.type === "CLOSE_MODAL") {
+  } else if (action.type === "CLOSE_MODAL") {
     return {
       ...state,
       showAlert: false,
       message: "",
     };
+  } else {
+    return state;
   }
-  return state;
 };
 
 const initialState = {
