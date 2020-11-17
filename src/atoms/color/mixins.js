@@ -6,7 +6,7 @@ export const color = theme.variants("mode", "color", {
     primarydark: { light: 'color:#271661', dark: 'color:#271661' },
     primarylight: { light: 'color:#6f87ff', dark: 'color:#6f87ff'},
     primarydarklight: { light: 'color:#685c90', dark: 'color:#685c90'},
-    warning :{light:'color:yellow', dark:'color:red'}
+    warning :{light:"color:yellow", dark:"color:red"}
     
   });
 

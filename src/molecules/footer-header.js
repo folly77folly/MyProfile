@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { StyledTypography } from "../atoms/typography/mixins";
 import { StyledButton } from "../atoms/Buttons/styles";
 import Loader from "react-loader-spinner";
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import axios from 'axios'
  
 
@@ -114,7 +114,10 @@ function FooterSide() {
             payload: 'Network Error'
           })
         }else{
-          console.log(error)
+          dispatch({
+            type:"ERROR",
+            payload: 'Network Error'
+          })
         }
       })
       
